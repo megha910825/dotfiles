@@ -1,0 +1,27 @@
+type: short description of commit
+
+longer explanation of the motivation of the change
+
+Component: enter TeamCity - Component or delete line
+Test-Cases: enter QuAP-ID or delete line
+#---------  types  --------------------------------------------------------
+# build, chore, ci, docs, feat, fix, pref, refactor, style, test
+#---------  convention for the short description  -------------------------
+# quap-anforderungen:   1.2.3.4
+# trac-ticket:          #1234 
+# jira-task:            [TOKY-1234]
+# azure-work-item:      Fixes #1234 and fixes #4321
+#--------------------------------------------------------------------------
+#
+#---------  explanation of the different types  ---------------------------
+# build:    changes to the build-process
+# chore:    changes to auxiliary tools such as documentation generation
+# ci:       continuous integration
+# docs:     documentation only changes
+# feat:     a new feature
+# fix:      a bug fix
+# perf:     a code chage that improves performance
+# refactor: a code change that neither fixes a bug or adds a feature
+# style:    changes that do not affect the meaning of the code (formatting)
+# test:     adding missing tests
+#--------------------------------------------------------------------------

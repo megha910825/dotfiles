@@ -1,0 +1,37 @@
+Host 10.190.40.119
+IdentityFile ~/.ssh/id_rsa
+IdentitiesOnly yes
+
+Host ssh.dev.azure.com
+IdentityFile ~/.ssh/id_rsa
+IdentitiesOnly yes
+
+Host demedmucsans002
+Hostname demedmucsans002.demuc01.zeiss.org
+IdentityFile ~/.ssh/ansible_ssh/id_rsa_ansible
+IdentitiesOnly yes
+Port 22
+
+Host *.demuc01.zeiss.org
+IdentityFile ~/.ssh/ansible_ssh/id_rsa_remote
+IdentitiesOnly yes
+Port 23155
+User remote
+
+# Host 10.190.40.145
+# Hostname demedmucsans002.vmnet
+# IdentityFile ~/.ssh/ansible_ssh/id_rsa_ansible
+# IdentitiesOnly yes
+# User mba
+# ProxyJump live-linux
+
+# Host live-linux
+# Hostname 10.5.120.12
+# Port 26
+# User live-linux
+
+Host 10.190.40.*
+IdentityFile ~/.ssh/ansible_ssh/id_rsa_remote
+IdentitiesOnly yes
+Port 23155
+User remote
